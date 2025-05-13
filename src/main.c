@@ -425,6 +425,7 @@ int main(int argc, char ** argv){
       MPI_Barrier(MPI_COMM_WORLD);
     }
 
+    // 执行测试并记录时间
     double start = GetTimeStamp();
     opt.is_valid_phase = 1;
     double score = phase->run();
